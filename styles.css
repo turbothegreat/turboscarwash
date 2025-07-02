@@ -1,4 +1,4 @@
-    body {
+body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
     }
@@ -17,6 +17,10 @@
       border: 2px solid #00cc44;
       border-radius: 10px;
       margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    .price-card:hover {
+      transform: scale(1.03);
     }
     .footer {
       background-color: #000;
