@@ -1,0 +1,33 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero {
+      background-color: #000;
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 40px;
+      color: #00cc44;
+      font-weight: bold;
+    }
+    .price-card {
+      border: 2px solid #00cc44;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .btn-green {
+      background-color: #00cc44;
+      color: #fff;
+    }
+    .btn-green:hover {
+      background-color: #009933;
+    }
