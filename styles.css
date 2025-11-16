@@ -1,6 +1,7 @@
 body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f8f9fa;
+      background-image: url(background.jpg);
     }
     .hero {
       background-color: #000;
@@ -12,6 +13,7 @@ body {
       margin-top: 40px;
       color: #00cc44;
       font-weight: bold;
+
     }
     .price-card {
       border: 2px solid #00cc44;
@@ -23,7 +25,7 @@ body {
       transform: scale(1.03);
     }
     .footer {
-      background-color: #000;
+      background-color: #fffefe;
       color: #fff;
       padding: 20px 0;
       text-align: center;

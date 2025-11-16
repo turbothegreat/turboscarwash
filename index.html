@@ -4,63 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turbo's AutoShine CarWash</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Make all service text white */
+    .service-section h4,
+    .service-section .list-group-item,
+    .extra-services .list-group-item {
+      color: white !important;
+      background-color: transparent !important;
+      border: 1px solid rgba(255,255,255,0.25) !important;
+    }
+
+    /* Make contact text white */
+    .contact-text {
+      color: white !important;
+    }
+
+    /* Logo styling */
+    .top-logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 90px;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- Logo -->
+  <img src="your-logo.png" alt="Logo" class="top-logo">
+
   <!-- Hero Section -->
-  <section class="hero animate__animated animate__fadeInDown">
+  <section class="hero animate__animated animate__fadeInDown text-center text-white py-5">
     <div class="container">
-      <h1 class="display-4">Turbo's AutoShine CarWash</h1>
+      <h1 class="display-4">Turbo's AutoShine CarWash & Detailing018</h1>
       <p class="lead">Where Your Shine is Our Pride</p>
     </div>
   </section>
 
   <!-- Services Section -->
   <section class="container py-5 animate__animated animate__fadeInUp">
-    <h2 class="section-title text-center">Our Services</h2>
+
+    <h2 class="section-title text-center text-white">Our Services</h2>
 
     <div class="row mt-4">
-      <div class="col-md-6">
+
+      <!-- Small Cars -->
+      <div class="col-md-6 service-section">
         <h4>Small Cars (Hatchbacks & Sedans)</h4>
         <ul class="list-group mb-4">
-          <li class="list-group-item price-card">Quick Wash & Dry – R100</li>
-          <li class="list-group-item price-card">Deep Wash + Decontamination – R120</li>
-          <li class="list-group-item price-card">Full Wash + Hand Polish – R150</li>
-          <li class="list-group-item price-card">Full Wash, Polish & Wax – R180</li>
+          <li class="list-group-item">Quick Wash & Dry – R120 (Foam Wash • High Pressure Wash • Hand dry)</li>
+          <li class="list-group-item">Deep Wash + Decontamination – R160 (Iron remover • Tar remover • Trim clean • Door jamb wipe)</li>
+          <li class="list-group-item">Full Wash + Hand Polish – R200 (Gloss enhancement • Light scratch removal)</li>
+          <li class="list-group-item">Full Wash, Polish & Wax – R250 (Shield Wax • Hydrophobic protection)</li>
         </ul>
       </div>
-      <div class="col-md-6">
-        <h4>Large Cars (SUVs, Bakkies, Sedans)</h4>
+
+      <!-- Large Cars -->
+      <div class="col-md-6 service-section">
+        <h4>Large Cars (SUVs, Bakkies, Large Sedans)</h4>
         <ul class="list-group mb-4">
-          <li class="list-group-item price-card">Quick Wash & Dry – R120</li>
-          <li class="list-group-item price-card">Deep Wash + Decontamination – R150</li>
-          <li class="list-group-item price-card">Full Wash + Hand Polish – R160</li>
-          <li class="list-group-item price-card">Full Wash, Polish & Wax – R230</li>
+          <li class="list-group-item">Quick Wash & Dry – R140</li>
+          <li class="list-group-item">Deep Wash + Decontamination – R180</li>
+          <li class="list-group-item">Full Wash + Hand Polish – R220</li>
+          <li class="list-group-item">Full Wash, Polish & Wax – R300</li>
         </ul>
       </div>
+
     </div>
 
-    <h4 class="section-title">Extra Services</h4>
-    <ul class="list-group mb-4">
-      <li class="list-group-item price-card">Full Detail – R380</li>
-      <li class="list-group-item price-card">Minor Engine Bay Clean-Up (Extra) – R120</li>
-      <li class="list-group-item price-card">Tyre Shine – R30</li>
-      <li class="list-group-item price-card">Full Detail for SUVs/Bakkies – R380</li>
+    <!-- Extra Services -->
+    <h4 class="section-title text-white">Extra Services</h4>
+
+    <ul class="list-group mb-4 extra-services">
+      <li class="list-group-item">Full Detail – R500 (Full exterior + interior deep clean • Seats • Mats • Boot • Wax)</li>
+      <li class="list-group-item">Engine Bay – R100 (Degreasing • Dirt removal • Shine finish)</li>
+      <li class="list-group-item">Tyre Shine – R30 (Wet shine finish)</li>
     </ul>
+
   </section>
 
   <!-- Contact Section -->
   <section class="container text-center mb-5 animate__animated animate__fadeIn">
-    <h2 class="section-title">Book or Contact</h2>
-    <p>📞 Call or WhatsApp: <strong>079 836 7645</strong></p>
-    <a href="tel:+27798367645" class="btn btn-green">Call Now</a>
+    <h2 class="section-title text-white">Book or Contact</h2>
+
+    <p class="contact-text">📞 Call or WhatsApp: <strong>066 037 3764 / 079 836 7645</strong></p>
+
+    <a href="tel:+27798367645" class="btn btn-success">Call Now</a>
   </section>
 
   <!-- Footer -->
-  <footer class="footer animate__animated animate__fadeInUp">
-    <p>&copy; 2025 Turbo's AutoShine CarWash & Detailing</p>
+  <footer class="footer animate__animated animate__fadeInUp text-center text-white py-3">
+    <p>&copy; 2025 Turbo's AutoShine CarWash & Detailing018</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
