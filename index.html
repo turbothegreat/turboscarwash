@@ -3,106 +3,254 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turbo's AutoShine CarWash</title>
+  <title>Turbo's AutoShine CarWash | Premium Detailing Services</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-
-  <style>
-    /* Make all service text white */
-    .service-section h4,
-    .service-section .list-group-item,
-    .extra-services .list-group-item {
-      color: white !important;
-      background-color: transparent !important;
-      border: 1px solid rgba(255,255,255,0.25) !important;
-    }
-
-    /* Make contact text white */
-    .contact-text {
-      color: white !important;
-    }
-
-    /* Logo styling */
-    .top-logo {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 90px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-  <!-- Logo -->
-  <img src="your-logo.png" alt="Logo" class="top-logo">
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="successModalLabel">✅ Request Sent Successfully!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-dark">
+          <p>Thank you for booking with **Turbo's AutoShine**!</p>
+          <p>Your request has been sent and will be **confirmed via WhatsApp or SMS** shortly. Please ensure your phone number is correct.</p>
+          <p class="small mt-3">We look forward to shining your ride!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Hero Section -->
-  <section class="hero animate__animated animate__fadeInDown text-center text-white py-5">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <h1 class="display-4">Turbo's AutoShine CarWash & Detailing018</h1>
-      <p class="lead">Where Your Shine is Our Pride</p>
+      <a class="navbar-brand" href="#">
+        <img src="turboscarwashlogo2025.png" alt="Turbo's AutoShine Logo" class="nav-logo me-2">
+        Turbo's AutoShine
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="hero" class="hero-section text-center text-white d-flex align-items-center">
+    <div class="container animate__animated animate__fadeInDown">
+      <h1 class="display-3 fw-bold">Turbo's AutoShine CarWash</h1>
+      <p class="lead mb-4">Where **Your Shine is Our Pride**. Premium Car Care & Detailing.</p>
+      <a href="#booking" class="btn btn-primary btn-lg animate__animated animate__pulse animate__infinite">
+        <i class="fas fa-calendar-alt"></i> Book Your Wash Now!
+      </a>
+    </div>
+  </header>
+
+  <section id="services" class="container py-5">
+    <h2 class="section-title text-center mb-5 animate__animated animate__fadeIn">✨ Our Premium Services & Pricing ✨</h2>
+    
+    <div class="row">
+
+      <div class="col-lg-6 mb-4 animate__animated animate__fadeInLeft">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-4"><i class="fas fa-car-side"></i> Small Cars (Hatchbacks & Sedans)</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="fw-bold">Quick Wash & Dry</span> – R120 
+                <br><small class="text-muted">(Foam Wash • High Pressure Wash • Hand dry)</small>
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Deep Wash + Decontamination</span> – R160 
+                <br><small class="text-muted">(Iron remover • Tar remover • Trim clean • Door jamb wipe)</small>
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Full Wash + Hand Polish</span> – R200 
+                <br><small class="text-muted">(Gloss enhancement • Light scratch removal)</small>
+              </li>
+              <li class="list-group-item highlight-item">
+                <span class="fw-bold">Full Wash, Polish & Wax</span> – R250 
+                <br><small class="text-success">(Shield Wax • Hydrophobic protection **Best Value!**)</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-4 animate__animated animate__fadeInRight">
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-4"><i class="fas fa-truck-monster"></i> Large Cars (SUVs, Bakkies, Large Sedans)</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><span class="fw-bold">Quick Wash & Dry</span> – R140</li>
+              <li class="list-group-item"><span class="fw-bold">Deep Wash + Decontamination</span> – R180</li>
+              <li class="list-group-item"><span class="fw-bold">Full Wash + Hand Polish</span> – R220</li>
+              <li class="list-group-item highlight-item"><span class="fw-bold">Full Wash, Polish & Wax</span> – R300</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-center mt-5 mb-4 animate__animated animate__fadeIn">➕ Additional Detailing Services</h3>
+    <div class="row justify-content-center animate__animated animate__fadeInUp">
+      <div class="col-lg-8">
+        <ul class="list-group list-group-flush extra-services-list">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-spray-can"></i> **Full Interior & Exterior Detail**</span>
+            <span class="badge bg-dark rounded-pill">R600</span>
+            <small class="ms-3 text-muted">Exterior Full Wash • Full Interior Vaccum & Detailing • seats, mats, boot • Carpet & Mat Deep Cleaning • Full interior Detail • Polish & Wax (3 to 5 hrs)</small>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-fan"></i> **Engine Bay Detail**</span>
+            <span class="badge bg-dark rounded-pill">R100</span>
+            <small class="ms-3 text-muted">Degreasing • Dirt removal • Shine finish</small>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-tire"></i> **Tyre Shine**</span>
+            <span class="badge bg-dark rounded-pill">R30</span>
+            <small class="ms-3 text-muted">Wet shine finish</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section id="booking" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title text-center mb-5 animate__animated animate__fadeIn">🗓️ Book Your AutoShine</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="text-center mb-4 lead">Ready for that Turbo Shine? Fill out the form below or **Call Now!**</p>
+          
+          <form 
+            id="bookingForm" 
+            action="https://formspree.io/f/xwpgpaoy"  method="POST" 
+            class="p-4 border rounded shadow-sm animate__animated animate__fadeInUp"
+          >
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="Name" required> </div>
+            
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="Phone Number" required> </div>
+            
+            <div class="mb-3">
+              <label for="service" class="form-label">Select Service</label>
+              <select class="form-select" id="service" name="Service Package" required> <option selected disabled value="">Choose...</option>
+                <option>Small Car: Quick Wash & Dry - (R120)</option>
+                <option>Small Car: DeepWash & Decontamination - (R160)</option>
+                <option>Small Car: Full Wash & Hand Polish (R200)</option>
+                <option>Small Car: Full Wash, Polish & Wax - (R250)</option>
+                <option>Large Car: Quick Wash & Dry - (R140)</option>
+                <option>Small Car: DeepWash & Decontamination - (R180)</option>
+                <option>Small Car: Full Wash & Hand Polish (R220)</option>
+                <option>Large Car: Full Wash, Polish & Wax - (R300)</option>
+                <option>Full Detail (R600)</option>
+                <option>Other / Custom</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="appointmentDate" class="form-label">Preferred Date & Time</label>
+              <input type="datetime-local" class="form-control" id="appointmentDate" name="Preferred Date & Time"> </div>
+            
+            <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane"></i> Request Appointment</button> 
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="container py-5 animate__animated animate__fadeInUp">
+  <section id="contact" class="container text-center py-5">
+    <h2 class="section-title mb-4 animate__animated animate__fadeIn">📞 Contact Us Directly</h2>
+    
+    <div class="contact-info p-4 border rounded animate__animated animate__fadeInUp">
+      <p class="lead">For the fastest service or urgent bookings:</p>
+      <p class="h4 mb-3">
+        <i class="fas fa-phone-alt text-primary"></i> Call or WhatsApp: 
+        <br class="d-md-none">
+        <strong>066 037 3764 / 079 836 7645</strong>
+      </p>
 
-    <h2 class="section-title text-center text-white">Our Services</h2>
-
-    <div class="row mt-4">
-
-      <!-- Small Cars -->
-      <div class="col-md-6 service-section">
-        <h4>Small Cars (Hatchbacks & Sedans)</h4>
-        <ul class="list-group mb-4">
-          <li class="list-group-item">Quick Wash & Dry – R120 (Foam Wash • High Pressure Wash • Hand dry)</li>
-          <li class="list-group-item">Deep Wash + Decontamination – R160 (Iron remover • Tar remover • Trim clean • Door jamb wipe)</li>
-          <li class="list-group-item">Full Wash + Hand Polish – R200 (Gloss enhancement • Light scratch removal)</li>
-          <li class="list-group-item">Full Wash, Polish & Wax – R250 (Shield Wax • Hydrophobic protection)</li>
-        </ul>
-      </div>
-
-      <!-- Large Cars -->
-      <div class="col-md-6 service-section">
-        <h4>Large Cars (SUVs, Bakkies, Large Sedans)</h4>
-        <ul class="list-group mb-4">
-          <li class="list-group-item">Quick Wash & Dry – R140</li>
-          <li class="list-group-item">Deep Wash + Decontamination – R180</li>
-          <li class="list-group-item">Full Wash + Hand Polish – R220</li>
-          <li class="list-group-item">Full Wash, Polish & Wax – R300</li>
-        </ul>
-      </div>
-
+      <a href="tel:+27798367645" class="btn btn-success me-2"><i class="fas fa-phone-volume"></i> Call Now</a>
+      <a href="https://wa.me/27798367645" class="btn btn-dark"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      
+      <p class="mt-3 text-muted">Operating Hours: Mon - Sat, 8:00 AM - 5:00 PM</p>
     </div>
 
-    <!-- Extra Services -->
-    <h4 class="section-title text-white">Extra Services</h4>
-
-    <ul class="list-group mb-4 extra-services">
-      <li class="list-group-item">Full Detail – R500 (Full exterior + interior deep clean • Seats • Mats • Boot • Wax)</li>
-      <li class="list-group-item">Engine Bay – R100 (Degreasing • Dirt removal • Shine finish)</li>
-      <li class="list-group-item">Tyre Shine – R30 (Wet shine finish)</li>
-    </ul>
-
   </section>
 
-  <!-- Contact Section -->
-  <section class="container text-center mb-5 animate__animated animate__fadeIn">
-    <h2 class="section-title text-white">Book or Contact</h2>
-
-    <p class="contact-text">📞 Call or WhatsApp: <strong>066 037 3764 / 079 836 7645</strong></p>
-
-    <a href="tel:+27798367645" class="btn btn-success">Call Now</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer animate__animated animate__fadeInUp text-center text-white py-3">
-    <p>&copy; 2025 Turbo's AutoShine CarWash & Detailing018</p>
+  <footer class="footer text-center py-4">
+    <p class="m-0">&copy; 2025 Turbo's AutoShine CarWash. All Rights Reserved.</p>
+    <p class="m-0"><a href="#hero" class="text-white-50 text-decoration-none">Back to Top</a></p>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('bookingForm');
+        
+        form.addEventListener('submit', async function (event) {
+            // Prevent the default form submission (which reloads the page)
+            event.preventDefault(); 
+            
+            // Get the Formspree action URL
+            const action = event.target.action;
+            const data = new FormData(event.target);
+            
+            // Submit the form data to Formspree
+            const response = await fetch(action, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // 1. Show the success message modal (text confirmation)
+                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                successModal.show();
+                
+                // 2. Clear the form fields
+                form.reset();
+
+            } else {
+                // Form submission failed 
+                alert("Oops! There was a problem sending your request. Please try again or call us.");
+            }
+        });
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
