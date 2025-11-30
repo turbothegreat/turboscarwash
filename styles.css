@@ -80,6 +80,9 @@ a:hover {
 #services .extra-services-list .text-muted {
     color: #0eff01 !important; /* Example: Changed to a bright yellow */
 }
+.service-card .list-group-item .text-muted {
+    color: #ffffff !important; /* Example: Changed to Bootstrap's Primary Blue */
+}
 #contact p.text-muted {
     color: #ffffff !important; /* Example: Changed to White */
 }
